@@ -1,1 +1,349 @@
 
+/* =========================================
+   1. Global configurations
+========================================= */
+
+:root {
+    --color-background: #ffffff;
+    --color-surface: #f7f8fa;
+    --color-text: #252a32;
+    --color-muted: #69717d;
+    --color-accent: #315f96;
+    --color-accent-hover: #244b78;
+    --color-border: #e5e8ed;
+
+    --font-main: Arial, Helvetica, sans-serif;
+
+    --container-width: 1080px;
+}
+
+/* =========================================
+   2. Reset and base styles
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-main);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-accent-hover);
+}
+
+.container {
+    width: min(90%, var(--container-width));
+    margin: 0 auto;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+    z-index: 100;
+    padding: 10px 16px;
+    background: var(--color-accent);
+    color: white;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* =========================================
+   3. Header and navigations
+========================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid var(--color-border);
+    backdrop-filter: blur(10px);
+}
+
+.header-container {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.site-logo {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: -0.5px;
+}
+
+.site-logo span {
+    color: var(--color-accent);
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-navigation a {
+    color: var(--color-muted);
+    font-size: 0.92rem;
+    transition: color 0.2s ease;
+}
+
+.main-navigation a:hover {
+    color: var(--color-accent);
+}
+
+/* =========================================
+   4. Hero section design
+========================================= */
+
+.hero {
+    padding: 125px 0 115px;
+    max-width: 760px;
+}
+
+.eyebrow {
+    color: var(--color-accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    margin-bottom: 14px;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4.2rem);
+    line-height: 1.16;
+    letter-spacing: -2px;
+    margin: 0 0 25px;
+}
+
+.hero-description {
+    max-width: 610px;
+    color: var(--color-muted);
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+/* =========================================
+   5. Buttons
+========================================= */
+
+.button {
+    display: inline-block;
+    padding: 11px 22px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.button-primary {
+    background: var(--color-accent);
+    color: white;
+}
+
+.button-primary:hover {
+    background: var(--color-accent-hover);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+}
+
+.button-secondary:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* =========================================
+   6. General content sections
+========================================= */
+
+.content-section {
+    padding: 75px 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.section-heading {
+    margin-bottom: 32px;
+}
+
+.section-heading h2 {
+    font-size: 2rem;
+    letter-spacing: -0.8px;
+    margin: 0 0 10px;
+}
+
+.section-heading > p:not(.eyebrow) {
+    color: var(--color-muted);
+}
+
+/* =========================================
+   7. Skills
+========================================= */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list span {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    padding: 9px 16px;
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+/* =========================================
+   8. Projects
+========================================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.project-card {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 28px;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.project-category {
+    color: var(--color-accent);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    margin: 12px 0;
+}
+
+.project-card > p:not(.project-category) {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+.project-technologies {
+    color: var(--color-muted);
+    font-size: 0.82rem;
+    margin: 20px 0;
+}
+
+.project-link {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   9. Contact
+========================================= */
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+/* =========================================
+   10. Footer
+========================================= */
+
+.site-footer {
+    border-top: 1px solid var(--color-border);
+    padding: 25px 0;
+    color: var(--color-muted);
+    font-size: 0.85rem;
+}
+
+/* =========================================
+   11. Responsive design
+========================================= */
+
+@media (max-width: 650px) {
+
+    .header-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0;
+        gap: 10px;
+    }
+
+    .main-navigation {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 85px 0;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        padding: 55px 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
