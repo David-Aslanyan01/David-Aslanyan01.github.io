@@ -1,3 +1,17 @@
 theme: jekyll-theme-minimal
 title: david-aslanyan01 | Front Page
-description: My portfolio and projects!
+description: "Personal portfolio, software projects, and technical interests."
+
+markdown: kramdown
+permalink: pretty
+
+# GitHub Pages settings
+url: "https://david-aslanyan01.github.io"
+baseurl: ""
+
+# Default page layout
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
