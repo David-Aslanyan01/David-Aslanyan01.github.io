@@ -10,7 +10,8 @@
     --color-muted: #69717d;
     --color-accent: #315f96;
     --color-accent-hover: #244b78;
-    --color-border: #e5e8ed;
+    /*--color-border: #e5e8ed;*/
+   --color-border: #000000;
 
     --font-main: Arial, Helvetica, sans-serif;
 
