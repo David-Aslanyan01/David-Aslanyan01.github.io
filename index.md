@@ -1,7 +1,4 @@
-
----
 David Aslanyan | david-aslanyan01
----
 
 <section class="hero" id="about">
 
