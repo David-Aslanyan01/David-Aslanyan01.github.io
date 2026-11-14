@@ -1,4 +1,6 @@
-David Aslanyan \| david-aslanyan01
+---
+title: David Aslanyan - david-aslanyan01
+---
 
 <section class="hero" id="about">
 
