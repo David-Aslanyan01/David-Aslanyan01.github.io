@@ -62,7 +62,7 @@ title: David Aslanyan - david-aslanyan01
     <div class="projects-grid">
 
         <article class="project-card">
-            <p class="project-category">AUTOMATION</p>
+            <p class="project-category">Development and Automation</p>
             <h3>Email Processing System & Job Analytics</h3>
             <p>
                 An automation project for processing job-search emails, extracting information, and presenting job-analytics, obtained using AI for summarizing and categorizing jobs
