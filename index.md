@@ -5,8 +5,7 @@ David Aslanyan | david-aslanyan01
     <p class="eyebrow">INFORMATION SYSTEMS ENGINEER</p>
 
     <h1>
-        Building things.<br>
-        Understanding systems.<br>
+        Building things. Understanding systems.<br>
         Solving problems.
     </h1>
 
