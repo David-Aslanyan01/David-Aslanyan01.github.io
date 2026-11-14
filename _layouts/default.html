@@ -1,1 +1,60 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        {% if page.title %}
+            {{ page.title }} | {{ site.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
+
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet"
+          href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
+
+    <header class="site-header">
+        <div class="container header-container">
+
+            <a href="{{ '/' | relative_url }}" class="site-logo">
+                David Aslanyan<span>.</span>
+            </a>
+
+            <nav class="main-navigation" aria-label="Main navigation">
+                <a href="{{ '/' | relative_url }}#about">About</a>
+                <a href="{{ '/' | relative_url }}#skills">Skills</a>
+                <a href="{{ '/' | relative_url }}#projects">Projects</a>
+                <a href="{{ '/' | relative_url }}#contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main-content" class="container">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                &copy; {{ site.time | date: "%Y" }} David Aslanyan
+                Built with Jekyll and GitHub Pages.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
