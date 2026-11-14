@@ -109,6 +109,7 @@ title: David Aslanyan - david-aslanyan01
     <div class="contact-links">
         <a href="mailto:davidarmenas@gmail.com">Email</a>
         <a href="https://github.com/david-aslanyan01">GitHub</a>
+        <a href="https://huggingface.co/DavArm">Hugging Face</a>
         <a href="https://www.linkedin.com/in/david-aslanyan-580311361/">LinkedIn</a>
     </div>
 
