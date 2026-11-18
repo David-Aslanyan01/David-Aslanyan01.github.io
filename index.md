@@ -86,7 +86,7 @@ title: David Aslanyan - david-aslanyan01
             <div class="project-technologies">
                 JavaScript · Python · n8n · Reddis · RestAPI
             </div>
-            <a href="#" class="project-link">
+            <a href="[AI-Automation-Projects](https://github.com/David-Aslanyan01/AI-Automation-Projects)" class="project-link">
                 View project →
             </a>
         </article>
